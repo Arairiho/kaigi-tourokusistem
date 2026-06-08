@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<header>
+		<h1>会議室予約システム</h1>
+	</header>
+
+<h5>↓予約したい部屋をクリックしてね↓</h5>
+<div class="flex">
+
+	<main class="map flex">
+<div class="map1"><a href="/main" id="heya1">会議室1</a></div>
+<div class="map2"><a href="/main" id="heya2">会議室2</a></div>
+<div class="map3"><a href="/main" id="heya3">会議室3</p></div>
+<div class="map4"><a href="/main" id="heya4">会議室4</a></div>
+<div class="map5"><a href="/main" id="heya5">会議室5</a></div>
+<div class="map6"><a href="/main" id="heya6">会議室6</a></div>
+<div class="map7"><a href="/main" id="heya7">会議室7</a></div>
+	</main>
+	
+	<img src="/downroad.jpg" class="img1">
+	</div>
+	<br>
+	
+	<form action="reserve" method="post">
+	<table>
+		<tr><th>会議室名</th><th>日付</th><th>時間</th><th>使用目的</th></tr>
+		<tr><td>会議室名</td><td><input type="date" name="siyoubi"></td><td><input type="selectbox"></td><td><input type="text" name="okuteki"></td><td><button>予約</button></td></tr>
+	
+	</table>
+	
+	
+	<h3>カレンダー</h3>
+	<table>
+		<tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		<tr><td>日</td><td>月</td><td>火</td><td>水</td><td>木</td><td>金</td><td>土</td></tr>
+		
+	</table>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+
+	<h1>新規登録</h1>
+
+	<form action="/login" method="Post">
+
+		<table>
+
+			<tr>
+				<td>
+					<p>名前：</p>
+				</td>
+				<td>
+					<input type="text" name="name">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>メールアドレス：</p>
+				</td>
+				<td>
+					<input type="text" name="mail">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>パスワード：</p>
+				</td>
+				<td>
+					<input type="text" name="pass">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>パスワード（確認）：</p>
+				</td>
+				<td>
+					<input type="text" name="pass2">
+				</td>
+			</tr>
+
+		</table>
+		<button>登録</button>
+	</form>
+
+</body>
+
+</html>

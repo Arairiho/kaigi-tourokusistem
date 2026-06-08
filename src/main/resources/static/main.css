@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+		align-items: center;
+		position: relative;
+}
+
+.img1{
+	width:30%;
+	height:300px ;
+	margin-bottom: 0%;
+}
+
+.map{
+	background-color: rgb(145, 240, 204);
+	width:60%;
+	margin: auto;
+	height: 400px;
+}
+
+.map1{
+	width:30%;
+	height:40%;
+	margin-left:5%;
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+.map2{
+	width:20%;
+	height:40%;
+	background-color: antiquewhite;
+	text-align: center;
+}
+
+.map3{
+	width:10%;
+	height:30%;
+	background-color: antiquewhite;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.map4{
+	width:150px;
+	height:130px;
+	background-color: antiquewhite;
+	text-align: center;
+	margin-right:5%;
+	margin-bottom: 0%;
+
+}
+
+.map5{
+	width:150px;
+	height:130px;
+	background-color: antiquewhite;
+	text-align: center;
+	margin:auto;
+}
+
+.map6{
+	width:150px;
+	height:130px;
+	background-color: antiquewhite;
+	text-align: center;
+	margin:auto;
+}
+
+.map7{
+	width:150px;
+	height:130px;
+	background-color: antiquewhite;
+	text-align: center;
+	margin:auto;
+}
