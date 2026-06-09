@@ -21,11 +21,22 @@ public class KaigiController {
 		return "sinki";
 	}
 
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+
+	@GetMapping("/main")
+	public String main() {
+		return "main";
+	}
+
 	@PostMapping("/login")
 	public String login(
 			@RequestParam String name,
 			@RequestParam String mail,
 			@RequestParam String pass) {
+
 		User user = new User(name, mail, pass);
 		userRepository.save(user);
 
@@ -33,7 +44,19 @@ public class KaigiController {
 	}
 
 	@PostMapping("/main")
-	public String main() {
-		return "main";
+	public String main(
+			@RequestParam String mail,
+			@RequestParam String pass) {
+
+		User user = null;
+		user = userRepository.findByEmailAndPassword(mail, pass);
+
+		if (user == null) {
+			return "login";
+		} else {
+
+			return "main";
+
+		}
 	}
 }
