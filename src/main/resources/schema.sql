@@ -22,5 +22,5 @@ start_date DATE,
 finish_date DATE,
 created_date DATE,
 roomnumber INTEGER,
-categry INTEGER,
+categry INTEGER
 );
